@@ -1,6 +1,9 @@
-function Nav({text}) {
+function Nav({ text }) {
   return (
-    <p>{text}</p>
+    <>
+      <p>{text}</p>
+      <p>{text}</p>
+    </>
   );
 }
 
