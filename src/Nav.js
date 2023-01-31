@@ -1,9 +1,21 @@
-function Nav({ text }) {
+import React from 'react'
+import { Box, ButtonGroup } from '@mui/material'
+import NavItem from './NavItem'
+
+const Nav = () => {
+  const array = ['Home', 'Contact', 'About']
   return (
-    <div class="container">
-      <p>{text}</p>
-    </div>
-  );
+    <Box display={'flex'} justifyContent='space-between'>
+      <ButtonGroup
+        variant='contained'
+        aria-label='outlined primary button group'
+      >
+        {array.map((v, i) => {
+          return <NavItem text={v} />
+        })}
+      </ButtonGroup>
+    </Box>
+  )
 }
 
-export default Nav;
+export default Nav
