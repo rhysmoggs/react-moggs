@@ -1,6 +1,8 @@
-function Nav({text}) {
+function Nav({ text }) {
   return (
-    <p>{text}</p>
+    <div class="container">
+      <p>{text}</p>
+    </div>
   );
 }
 
